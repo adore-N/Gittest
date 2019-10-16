@@ -1,0 +1,194 @@
+谈一谈this
+谈一谈作用域
+谈一谈ajax
+首页跳列表页重新加载，列表页跳到详情页再跳回来，位置不变
+生命周期及各阶段能拿到的数据
+谈一谈跨域
+移动端优化
+cors解决跨域时,get和post请求的区别
+vue中数据劫持Object.defineProperty()的不足以及改进方法
+
+请描述从输入url到页面渲染成功，浏览器中发生了什么
+谈一谈vue的生命周期
+静态资源怎么缓存
+回流和重绘
+延迟加载script标签
+页面渲染后，调试工具会返回些什么
+vue-router的两种模式的区别
+谈一谈promise和箭头函数
+
+ios、安卓前端兼容性大全
+0.682
+2018.04.07 12:02:02
+字数 383
+阅读 4746
+1.日期兼容性
+解决方法（请看我上一篇文章）
+安卓、ios时间转换成时间戳的形式
+2.input框聚焦，ios出现outline或者阴影，安卓显示正常
+解决方法
+input:focus{outline:none}
+input:{-webkit-appearance: none;}
+3.关于flex布局
+解决方法
+flex布局对于低版本的安卓，不支持flex-wrap:wrap属性，但是ios系统支持换行属性，这个时候如何解决呢？当然是不使用换行啦。
+如果你的布局必须要用到换行，那就在外层包裹一个大的div，然后设置几个小div，每个小div的布局都是flex（但是不换行哦）；（希望你能理解我的意思，如果不理解，可以在下方留言，我会实时做出解答）
+4.ios系统，会将数字当成电话号码，导致变色
+解决方法
+<meta name="format-detection" content="telephone=no"> 
+<meta http-equiv="x-rim-auto-match" content="none">
+将上面的代码加入到<head>标签中
+
+5.禁止安卓识别email
+解决方法
+<meta content="email=no" name="format-detection" />
+6.input 的placeholder属性会使文本位置偏上
+解决方法
+line-height: （和input框的高度一样高）---pc端解决方法
+line-height：normal ---移动端解决方法
+7.input type=number之后，pc端出现上下箭头
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+
+原生的链式调用  jq是如何实现的
+实现类似于vue 路由的原理是什么  
+原生怎样监控路由  
+如何监听到hash的路由变更   
+vue和react的组件传值   
+react组件传值使用props接受，props接收的数据能不能更改    
+webpack搭建项目  
+vue怎样兼容ie  
+懒加载 ajax 实现原理  
+移动端兼容  flex兼容问题
+
+1.介绍一下redux
+2.react生命周期
+3.原型链
+4.vue数据双向绑定
+5.数据存储方式
+6.响应式布局
+7.js六种继承方式
+8.vue生命周期
+9.开发中遇到的兼容性问题
+10.element ui中遇到的兼容性问题
+
+
+防抖与节流
+闭包
+原型链
+状态管理器
+css3新特性
+项目亮点
+弹性盒居中
+
+webpack怎样把一个大的项目打成很多小包
+Vue中跳转到另一个页面按了一下刷新vuex中存储的数据会初始化，怎样让他不初始化
+Set和map
+继承的方式
+弹性盒子布局
+继承中的super是干嘛用的
+Vue路由传参
+原型和原型链
+移动端兼容
+Vue的导航守卫
+Vuex核心模块
+
+
+面试问题
+1.前端更新页面，浏览器有缓存，那用户是怎么获取到新数据？
+2.webpack打包相关问题，自己有没有配置过，流程是什么
+3.一个图片行内样式设置宽一百并加上important. 在css设置最大宽度100，最后显示哪个
+4.关于vue_cli的一些问题大家着重看看
+5.vue数据双向绑定二和三版本更换后有什么区别
+6.vue生命周期
+7.vue项目中，类似选项卡切换效果设置登录，一个用手机号登录另一个用邮箱登录，设置一个输入框，为什么在一个输入框输入过后，点击切换到另一个输入框会出保留上次输入，如何解决？
+8.v  if和v-show的区别
+
+1.项目是用vue那个版本写的？
+2.vue中如何跳转？如何传值？quest？
+3.A页面跳转B页面，怎么实现根据A页面中的状态，跳转B页面时传不传值？
+4.v-if和v-show？
+5.页面中有6个请求，怎么实现当前五个请求完成，才请求第六个（promise.all）?
+6.有两个页面AB，A中有一个按钮，当点击的时候执行
+setTimeout(function(){ 
+console.log(123) 
+}, 3000);
+this.$router.push('B')会有什么结果？会打印123？跳转的时候是怎么样的？
+7.一个页面有A状态和B状态，当两个状态都有的时候，执行C状态，怎么实现？
+8.ajax的封装是什么（axios）？在哪个生命周期钩子函数中使用？created和mounted
+的区别？
+9.了解E6吗？都了解什么？
+10.圆圈里面有个V怎么用CSS实现？
+11.元素如何居中？
+12.知道如何打包？element用过吗？解决跨域？后台管理的权限怎么做？
+
+1.元素居中：定位，；margin、padding；移动；flex；
+2.setTimeout(function(){ 
+for i=0；i<10;i++；
+console.log(i) 
+}, 3000);
+会出现什么？
+3.abcde变成edcba？
+4.v-if和v-show？
+5.vue单页面的优缺点？
+6.在哪个生命周期钩子函数中获取数据？（created，mounted已经加载DOM了，不在那里获取数据）created和mounted
+的区别？
+7.如何打包（dist）？webpack用过吗？解决跨域jsonp原理（script标签）？
+8.响应式布局，自适应布局，rem如何设置（编辑器引入淘宝插件直接规定px和rem的转换）？
+
+1.git如何解决冲突问题
+2.ajax和fetch区别
+3.ajax拦截
+4.小程序视频托管怎么实现
+5.css怎么实现滑动过渡切换
+6.swiper怎么用
+7.小程序开发中遇到的问题和解决方案
+8.vue全家桶了解么
+9.对vue模块化的理解
+10.vue双向绑定原理
+11.let和var的区别
+12.怎么解决跨域问题
+13.bootstrap 怎么实现自适应
+14.根据简历上项目技术要点提问功能怎么实现
+
+1、响应式布局 viewport 
+2、本地存储 区别 还知道别的本地存储吗（Web SQL 和 IndexDB）
+3、mixin 、solt
+4、盒模型 区别 怎样计算width:
+   IE:(content + padding + border)
+wsc标准盒子：（content）
+5、promise
+6、hash 、history
+7、懒加载
+8、vue双向绑定原理，data定义了一个复杂类型时，要临时加一些东西，怎样做到临时加的一些东西也具备双向绑定（使用$set方法）
+9、项目的一些功能，webpack（问的挺多的）
+10、居中方法
+11、ES6新增的一些东西
+12、vue路由的守卫
+
+
+npm cnpm用的时候会有什么问题
+npm是国内还是国外的路径
+axios拦截器
+vue双向绑定用在哪里 怎么用 不要说原理 说代码
+一个侧边栏点击一个导航显示一个什么列表 导航下面显示 类似面包屑那种 逻辑样式都有 你完成需要多久 
+element－admin
+vuex
+你是怎么自学的 学的有什么
+glup webpack
+怎么提升页面加载速度
+独立开发能不能
+axios怎么用 用在哪 代码
+移动端遇到哪些问题
+＋人事问题
+
+
+
+
+
+
+
